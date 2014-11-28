@@ -1,0 +1,77 @@
+/* 
+ * Boxes style layout
+ * 
+ * author: Austin S.A. Wang
+ */
+
+/* Change box model of the whole page to be border-box */
+*, *:after, *:before {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	background-color: #222;
+}
+
+.page-wrap:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.page-wrap {
+	background-color: #CCC;
+	width: 90%;
+	max-width: 877px;
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+}
+
+.row {
+	padding-bottom: 20px
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+
+#place_holder_pic {
+	background-color: red;
+	height: 50px;
+	width: 50px;
+}
+
+.module {
+	padding: 10px;
+	margin: 0;
+
+}
+
+#basic-info {
+	background-color: #888;
+}
+
+#picture {
+	background-color: #88F;
+}
+
