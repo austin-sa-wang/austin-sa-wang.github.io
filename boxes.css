@@ -26,11 +26,11 @@ body {
 	width: 90%;
 	max-width: 877px;
 	margin: 0 auto;
-	padding: 20px 20px 20px 20px;
+	padding: 10px 20px 10px;
 }
 
 .row {
-	padding-bottom: 20px
+	padding-bottom: 5px
 }
 
 .row:after {
@@ -41,7 +41,7 @@ body {
 
 [class*='col-'] {
 	float: left;
-	padding-right: 20px;
+	padding-right: 5px;
 }
 
 [class*='col-']:last-of-type {
@@ -54,17 +54,19 @@ body {
 .col-1-3 {
 	width: 33.33%;
 }
+.col-1-2 {
+	width: 50%;
+}
 
 #place_holder_pic {
 	background-color: red;
-	height: 50px;
-	width: 50px;
+	height: 124px;
+	width: 124px;
 }
 
 .module {
 	padding: 10px;
 	margin: 0;
-
 }
 
 #basic-info {
@@ -75,3 +77,31 @@ body {
 	background-color: #88F;
 }
 
+h1 {
+	margin: 0;
+}
+
+img {
+	display: inline-block;
+}
+
+img[alt="profile picture"] {
+	display: block;
+	margin: 0 auto 0 auto;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: slidein;
+	-webkit-animation-timing-function: ease-in-out;	
+}
+
+@-webkit-keyframes slidein {
+ 	0% {
+		transform: translateX(150%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+
+.row#skills .module {
+	background-color: #848;
+}
