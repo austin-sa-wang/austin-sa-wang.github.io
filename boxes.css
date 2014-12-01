@@ -115,10 +115,10 @@ p {
 	background-color: #848;
 }
 
-.row#about .module {
-	background-color: #488;
+#about {
+	background-color: #579;
 }
 
-#bkg {
+#bkg-info {
 	background-color: #488;
 }
