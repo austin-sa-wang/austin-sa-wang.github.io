@@ -1,4 +1,4 @@
 austin-sa-wang.github.io
 ========================
 
-The About Page of Austin S.A. Wang
+The Information of Austin S.A. Wang
