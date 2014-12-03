@@ -11,7 +11,7 @@
 	-moz-box-sizing: border-box;
 }
 
-.page-wrap:after {
+.grid:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -20,13 +20,13 @@
 .page-wrap {
 	background-color: #CCC;
 	width: 90%;
-	max-width: 877px;
+	max-width: 1000px;
 	margin: 0 auto;
-	padding: 10px 20px 10px;
+	padding: 10px 50px 50px;
 }
 
 .row {
-	padding-bottom: 5px
+	padding-bottom: 8px;
 }
 
 .row:after {
@@ -52,6 +52,9 @@
 }
 .col-1-2 {
 	width: 50%;
+}
+.col-1-1 {
+	width: 100%;
 }
 
 /* content */
@@ -87,23 +90,69 @@ aside {
 }
 
 ul {
-	font-size: 1.1em;
-	line-height: 1.4em;
+	font-size: 1.0em;
+	line-height: 1.2em;
+	margin: 3px 12px 5px;
 }
 
 p {
 	font-size: 1.1em;
-	line-height: 1.9em;
+	line-height: 1.5em;
+	margin: 6px 12px 12px;
 }
 
 /* module specific styling */
 .module {
 	overflow: hidden;
-	padding: 10px;
 	margin: 0;
+	border-radius: 8px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* Module header style: inline */
+/*
+[data-header]::before {
+	content: attr(data-header-icon) " " attr(data-header);
+	border: 1px dashed;
+	border-radius: 5px;
+	padding: 2px;
+	background-color: #BBB;
+	color: #000;
+	font: normal normal normal 18px/1 octicons;
+	display: inline-block;
+	text-decoration: none;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+*/
+
+/* Module header style: top bar */
+[data-header]::before {
+	content: attr(data-header-icon) " " attr(data-header);
+	width: 100%;
+	background-color: #222;
+	color: #fff;
+	padding: 3px 6px 3px;
+	font: normal normal normal 16px/1 octicons;
+	display: inline-block;
+	text-decoration: none;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 #basic-info {
+	padding: 10px;
 	background-color: #888;
 }
 
@@ -120,5 +169,15 @@ p {
 }
 
 #bkg-info {
+	background-color: #488;
+}
+
+#portfolio {
+	background-color: #ffc;
+	height: 200px;
+}
+
+/* portfolio entry */
+.project {
 	background-color: #488;
 }
