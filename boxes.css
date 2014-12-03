@@ -98,7 +98,7 @@ ul {
 p {
 	font-size: 1.1em;
 	line-height: 1.5em;
-	margin: 6px 12px 12px;
+	margin: 4px 12px 12px;
 }
 
 /* module specific styling */
@@ -110,28 +110,6 @@ p {
 	border-bottom-right-radius: 3px;
 }
 
-/* Module header style: inline */
-/*
-[data-header]::before {
-	content: attr(data-header-icon) " " attr(data-header);
-	border: 1px dashed;
-	border-radius: 5px;
-	padding: 2px;
-	background-color: #BBB;
-	color: #000;
-	font: normal normal normal 18px/1 octicons;
-	display: inline-block;
-	text-decoration: none;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-*/
-
 /* Module header style: top bar */
 [data-header]::before {
 	content: attr(data-header-icon) " " attr(data-header);
@@ -139,7 +117,9 @@ p {
 	background-color: #222;
 	color: #fff;
 	padding: 3px 6px 3px;
-	font: normal normal normal 16px/1 octicons;
+	overflow: hidden;
+	height: 22px; /* Dependency: #bkg-info {height} - change accordingly */
+	font: normal normal normal 16px/1 octicons; /* Dependency: height - change accordingly */
 	display: inline-block;
 	text-decoration: none;
 	text-rendering: auto;
@@ -170,6 +150,20 @@ p {
 
 #bkg-info {
 	background-color: #488;
+	height: 32px;
+}
+
+#bkg-info:hover {
+	background-color: #488;
+	height: auto;
+}
+
+#bkg-info::before {
+	content: attr(data-header-icon) " " attr(data-header) "  \f03f";
+}
+
+#bkg-info:hover::before {
+	content: attr(data-header-icon) " " attr(data-header);
 }
 
 #portfolio {
