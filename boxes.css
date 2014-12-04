@@ -87,6 +87,10 @@ nav img {
 
 /* content */
 img[alt="profile picture"] {
+	height: 130px;
+	width: 130px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .8);
+	border-radius: 40px;
 	display: block;
 	margin: 0 auto 0 auto;
 	-webkit-animation-duration: 1s;
