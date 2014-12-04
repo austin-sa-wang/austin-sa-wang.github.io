@@ -4,6 +4,10 @@
  * author: Austin S.A. Wang
  */
 
+a {
+	text-decoration: none;
+}
+
 /* Grid framework */
 *, *:after, *:before {
 	box-sizing: border-box;
@@ -170,7 +174,7 @@ p {
 	background-color: #697;
 }
 
-/* portfolio list */
+/* portfolio */
 #portfolio ul {
 	padding: 0;
 	list-style: none outside none;
@@ -186,19 +190,18 @@ p {
 	border-top-left-radius: 10px;
 }
 
-#portfolio a {
-	text-decoration: none;
+/* Border Fade */
+.border-fade {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.border-fade:hover, .border-fade:focus, .border-fade:active {
+  box-shadow: inset 0 0 0 3px #444, 0 0 1px rgba(0, 0, 0, 0);
 }
 
-/* portfolio entry */
-.sample-snapshot {
-	float: left;
-	margin: 0 10px 0 0;
-	background-color: #000;
-	height: 120px;
-	width: 120px;
-}
-
+/* list item content */
 #portfolio p {
 	height: 120px;
 	margin: 0;
@@ -207,16 +210,9 @@ p {
 }
 
 #portfolio img {
-	display: ;
-}
-
-/* Border Fade */
-.border-fade {
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-.border-fade:hover, .border-fade:focus, .border-fade:active {
-  box-shadow: inset 0 0 0 4px #666666, 0 0 1px rgba(0, 0, 0, 0);
+	float: left;
+	margin: 0 10px 0 0;
+	background-color: #000;
+	height: 120px;
+	width: 120px;
 }
