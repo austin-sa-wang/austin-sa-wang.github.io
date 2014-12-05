@@ -48,13 +48,13 @@ nav img {
 .page-wrap {
 	background-color: #CCC;
 	width: 90%;
-	max-width: 1000px;
+	max-width: 900px;
 	margin: 0 auto;
 	padding: 10px 50px 50px;
 }
 
 .row {
-	padding-bottom: 8px;
+	padding-bottom: 18px;
 }
 
 .row:after {
@@ -65,7 +65,7 @@ nav img {
 
 [class*='col-'] {
 	float: left;
-	padding-right: 5px;
+	padding-right: 20px;
 }
 
 [class*='col-']:last-of-type {
@@ -121,10 +121,10 @@ aside {
 	font-size: 1.2em;
 }
 
-ul {
+#skills ul {
 	font-size: 1.0em;
 	line-height: 1.2em;
-	margin: 3px 12px 5px;
+	margin: 3px 4px 5px;
 }
 
 p {
@@ -140,6 +140,7 @@ p {
 	border-radius: 8px;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
+	box-shadow:         0px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* Module header style: top bar */
@@ -169,24 +170,23 @@ p {
 }
 
 #picture {
-	background-color: #88F;
+	background-color: #EEE;
 }
 
 .row#skills .module {
-	background-color: #848;
+	background-color: #F0F0F0;
 }
 
 #about {
-	background-color: #579;
+	background-color: #F0F0F0;
 }
 
 #bkg-info {
-	background-color: #488;
+	background-color: #F0F0F0;
 	height: 32px;
 }
 
 #bkg-info:hover {
-	background-color: #488;
 	height: auto;
 }
 
@@ -199,23 +199,25 @@ p {
 }
 
 #portfolio {
-	background-color: #697;
+	background-color: #F0F0F0;
 }
 
 /* portfolio */
 #portfolio ul {
 	padding: 0;
 	list-style: none outside none;
-	margin-bottom: 10px;
+	margin: 1px 5px 5px;
 }
 
 #portfolio li {
 	height: 130px;
-	padding: 5px;
+	padding: 3px;
 	margin-bottom: 5px;
-	background-color: #488;
+	background-color: #D6D6D8;
 	list-style: none outside none;
-	border-top-left-radius: 10px;
+	border-radius: 6px;
+	border: 1px solid black;
+	overflow: hidden;
 }
 
 /* Border Fade */
