@@ -297,10 +297,13 @@ p {
 }
 
 /* list item content */
+#portfolio h1 {
+	margin: 5px 0;
+	color: black;
+}
+
 #portfolio p {
-	height: 120px;
-	margin: 0;
-	text-decoration: ;
+	margin: 5px 0;
 	color: black;
 }
 
