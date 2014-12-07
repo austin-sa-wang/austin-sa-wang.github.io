@@ -208,7 +208,7 @@ floating
 		transform: translateY(0%);	
 	}
 	50% {
-		transform: translateY(8%);	
+		transform: translateY(10%);	
 	}	
 	100% {
 		transform: translateY(0%);
@@ -220,7 +220,7 @@ floating
 		-webkit-transform: translateY(0%);	
 	}
 	50% {
-		-webkit-transform: translateY(8%);	
+		-webkit-transform: translateY(10%);	
 	}	
 	100% {
 		-webkit-transform: translateY(0%);
@@ -282,7 +282,7 @@ p {
 
 #basic-info {
 	padding: 10px;
-	background-color: #888;
+	background-color: #9B9B9B;
 	height: 140px;
 	border: 1px dashed #CCC;
 	color: black;
@@ -298,8 +298,8 @@ small {
 	font-size: 1.2em;
 	margin-left: 5px;
 	padding-bottom: 2px;
-	border-bottom: 5px solid rgba(255,255,255,.08);
-	box-shadow: 0 2px rgba(0,0,0,.04);
+	border-bottom: 4px solid rgba(255,255,255,.08);
+	box-shadow: 0 2px rgba(0,0,0,0.04);
 }
 
 #picture {
@@ -307,25 +307,20 @@ small {
 }
 
 #skills > .col-4-10 > .module {
-	background-color: #F7F169;
-	background-color: #FFF;
+	background-color: #FFC56F;
 }
 
 #skills .col-3-10 > .module{
-	background-color: #FFC56F;
-	background-color: #FFF;
+	background-color: #F2F5A9;
 }
 
 #about {
-	background-color: #44C0AC;
-	background-color: #7C84BE;
-	background-color: #FFF;
+	background-color: #517670;
 }
 
 #bkg-info {
-	background-color: #877399;
 	height: 32px;
-	background-color: #FFF;
+	background-color: #517670;
 }
 
 #bkg-info:hover {
@@ -342,8 +337,6 @@ small {
 
 #portfolio {
 	background-color: #517670;
-	background-color: #C35C48;
-	background-color: #FFF;
 }
 
 /* portfolio */
