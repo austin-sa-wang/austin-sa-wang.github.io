@@ -4,6 +4,11 @@
  * author: Austin S.A. Wang
  */
 
+body::-webkit-scrollbar { 
+  /* This is the magic bit */
+  display: none;
+}
+
 /* Grid framework */
 *, *:after, *:before {
 	box-sizing: border-box;
@@ -319,11 +324,17 @@ small {
 }
 
 #bkg-info {
-	height: 32px;
+	/* Hack: transition on max-height */
+	transition-property: max-height;
+  	transition-duration: 0.2s;
+  	-webkit-transition-property: max-height;
+  	-webkit-transition-duration: 0.2s;
+	max-height: 32px;
 	background-color: #517670;
 }
 
 #bkg-info:hover {
+	max-height: 800px;
 	height: auto;
 }
 
