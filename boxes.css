@@ -118,33 +118,6 @@ nav img {
     vertical-align: top;
 }
 
-nav:after {
-    position: absolute;
-    content: '\f03d';
-    color: #F2F5A9;
-    padding-top: 6px;
-    padding-left: 5px;
-    font: normal normal normal 36px/1 octicons;
-    display: inline-block;
-    text-decoration: none;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    animation-name: floating;
-    -webkit-animation-name: floating;
-
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
 /* content */
 img[alt="profile picture"] {
     height: 140px;
@@ -246,6 +219,7 @@ body {
 }
 
 h1, h2, ul, p {
+    color: #111111;
     margin: 0;
 }
 
@@ -292,10 +266,9 @@ p {
 }
 
 #basic-info {
-    padding: 10px;
-    background-color: #9B9B9B;
+    padding: 15px;
+    background-color: #EEE;
     height: 140px;
-    border: 1px dashed #CCC;
     color: black;
 }
 
@@ -309,8 +282,8 @@ small {
     font-size: 1.2em;
     margin-left: 5px;
     padding-bottom: 2px;
-    border-bottom: 4px solid rgba(255, 255, 255, .08);
-    box-shadow: 0 2px rgba(0, 0, 0, 0.04);
+    border-bottom: 4px solid rgba(220, 220, 220, .28);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.10);
 }
 
 #picture {
@@ -353,6 +326,7 @@ small {
 }
 
 #bkg-info li {
+    font-size: 1.1em;
     line-height: 1.6em;
 }
 
@@ -374,13 +348,13 @@ small {
 }
 
 /* portfolio */
-#portfolio ul {
+#portfolio > ul {
     padding: 0;
     list-style: none outside none;
     margin: 1px 5px 5px;
 }
 
-#portfolio li {
+.portfolio-item {
     height: 130px;
     padding: 3px;
     margin-bottom: 5px;
@@ -404,14 +378,19 @@ small {
 }
 
 /* list item content */
-#portfolio h1 {
+.portfolio-item h1, p{
     margin: 5px 0;
-    color: black;
-}
+    color: #111111;
+ }
 
-#portfolio p {
-    margin: 5px 0;
-    color: black;
+.portfolio-item ul li {
+    display: inline;
+    font-size: 0.8em;
+    color: #111111;
+    background-color: #FF986F;
+    border: solid 1px;
+    padding: 2px;
+    border-radius: 4px;
 }
 
 #portfolio img {
@@ -420,4 +399,5 @@ small {
     background-color: #000;
     height: 120px;
     width: 120px;
+    border: 1px solid gray;
 }
