@@ -250,14 +250,14 @@ h1, h2, ul, p {
 }
 
 #skills ul {
-    font-size: 1.0em;
-    line-height: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.5em;
     margin: 3px 4px 5px;
 }
 
 p {
     font-size: 1.1em;
-    line-height: 1.6em;
+    line-height: 1.8em;
 }
 
 /* module specific styling */
@@ -318,11 +318,15 @@ small {
 }
 
 #skills > .col-4-10 > .module {
-    background-color: #FFC56F;
+    background-color: #FF986F;
 }
 
 #skills .col-3-10 > .module {
-    background-color: #F2F5A9;
+    background-color: #FFC56F;
+}
+
+#skills .col-3-10:last-child > .module {
+    background-color: #FFE26F;
 }
 
 #about {
@@ -366,7 +370,7 @@ small {
 }
 
 #portfolio {
-    background-color: #F2F5A9;
+    background-color: #EEE;
 }
 
 /* portfolio */
