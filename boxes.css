@@ -130,88 +130,6 @@ img[alt="profile picture"] {
     border: 2px dotted white;
 }
 
-/*
-==============================================
-tossing
-==============================================
-*/
-
-.tossing {
-    animation-name: tossing;
-    -webkit-animation-name: tossing;
-
-    animation-duration: 2.5s;
-    -webkit-animation-duration: 2.5s;
-
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes tossing {
-    0% {
-        transform: rotate(-3deg);
-    }
-    50% {
-        transform: rotate(3deg);
-    }
-    100% {
-        transform: rotate(-3deg);
-    }
-}
-
-@-webkit-keyframes tossing {
-    0% {
-        -webkit-transform: rotate(-3deg);
-    }
-    50% {
-        -webkit-transform: rotate(3deg);
-    }
-    100% {
-        -webkit-transform: rotate(-3deg);
-    }
-}
-
-/*
-==============================================
-floating
-==============================================
-*/
-
-.floating {
-    animation-name: floating;
-    -webkit-animation-name: floating;
-
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes floating {
-    0% {
-        transform: translateY(0%);
-    }
-    50% {
-        transform: translateY(10%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes floating {
-    0% {
-        -webkit-transform: translateY(0%);
-    }
-    50% {
-        -webkit-transform: translateY(10%);
-    }
-    100% {
-        -webkit-transform: translateY(0%);
-    }
-}
-
 body {
     font-family: sans-serif;
     font-size: medium;
@@ -343,18 +261,18 @@ small {
     content: attr(data-header-icon) " " attr(data-header);
 }
 
-#portfolio {
+#Works {
     background-color: #EEE;
 }
 
 /* portfolio */
-#portfolio > ul {
+#Works > ul {
     padding: 0;
     list-style: none outside none;
     margin: 1px 5px 5px;
 }
 
-.portfolio-item {
+.work-item {
     height: 130px;
     padding: 3px;
     margin-bottom: 5px;
@@ -378,12 +296,12 @@ small {
 }
 
 /* list item content */
-.portfolio-item h1, p{
+.work-item h1, p {
     margin: 5px 0;
     color: #111111;
  }
 
-.portfolio-item ul li {
+.work-item ul li {
     display: inline;
     font-size: 0.8em;
     color: #111111;
@@ -393,7 +311,7 @@ small {
     border-radius: 4px;
 }
 
-#portfolio img {
+#Works img {
     float: left;
     margin: 0 10px 0 0;
     background-color: #000;
