@@ -204,6 +204,13 @@ small {
     box-shadow: 0 2px rgba(0, 0, 0, 0.10);
 }
 
+address {
+    font-size: 0.9em;
+    margin-top: 14px;
+    margin-left: 5px;
+    font-style: normal;
+}
+
 #picture {
     background-color: #EEE;
 }
