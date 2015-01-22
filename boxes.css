@@ -154,12 +154,11 @@ p {
 
 /* module specific styling */
 .module {
+    background-color: #EEE;
     overflow: hidden;
     margin: 0;
-    border-radius: 8px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
 }
 
 /* Module header style: top bar */
@@ -185,7 +184,6 @@ p {
 
 #basic-info {
     padding: 15px;
-    background-color: #EEE;
     height: 140px;
     color: black;
 }
@@ -196,7 +194,7 @@ p {
     margin-bottom: 10px;
 }
 
-small {
+#basic-info small {
     font-size: 1.2em;
     margin-left: 5px;
     padding-bottom: 2px;
@@ -225,10 +223,6 @@ address {
     height: auto;
 }
 
-#picture {
-    background-color: #EEE;
-}
-
 #skills > .col-4-10 > .module {
     background-color: #FF986F;
 }
@@ -241,16 +235,8 @@ address {
     background-color: #FFE26F;
 }
 
-#about {
-    background-color: #EEE;
-}
-
 #about > div, #bkg-info > div {
-margin: 4px 12px 12px;
-}
-
-#bkg-info {
-    background-color: #EEE;
+    margin: 4px 12px 12px;
 }
 
 #bkg-info:hover {
@@ -274,10 +260,6 @@ margin: 4px 12px 12px;
 #bkg-info li {
     font-size: 1.1em;
     line-height: 1.6em;
-}
-
-#Works {
-    background-color: #EEE;
 }
 
 /* portfolio */
@@ -333,4 +315,9 @@ margin: 4px 12px 12px;
     height: 120px;
     width: 120px;
     border: 1px solid gray;
+}
+
+#book-list small::before {
+    content: "by ";
+    margin-left: 6px;
 }
