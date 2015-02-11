@@ -1,0 +1,72 @@
+/*
+ * _grid.scss
+ * Grid system based on border-box and percentage width
+ */
+
+@mixin clear-fix {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+/* Grid framework */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.grid {
+  @include clear-fix;
+}
+
+.row {
+  @include clear-fix;
+  padding-bottom: 18px;
+}
+
+// Column specs
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+@mixin col-width($numerator, $denominator) {
+  width: $numerator / $denominator * 100%;
+}
+
+.col-1-1 {
+  @include col-width(1, 1);
+}
+
+.col-1-2 {
+  @include col-width(1, 2);
+}
+
+.col-1-3 {
+  @include col-width(1, 3);
+}
+
+.col-2-3 {
+  @include col-width(2, 3);
+}
+
+.col-3-10 {
+  @include col-width(3, 10);
+}
+
+.col-4-10 {
+  @include col-width(4, 10);
+}
+
+.col-1-4 {
+  @include col-width(1, 4);
+}
+
+.col-3-4 {
+  @include col-width(3, 4);
+}
