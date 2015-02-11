@@ -1,0 +1,13 @@
+/*
+ * _helper-utilities.scss
+ * Helper rules accessible globally
+ */
+
+@mixin square-dimension($size) {
+  height: $size;
+  width: $size;
+}
+
+%thin-border {
+  border: 1px solid gray;
+}

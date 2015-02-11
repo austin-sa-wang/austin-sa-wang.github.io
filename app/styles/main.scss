@@ -6,9 +6,11 @@
 
 // bower:scss
 // endbower
-
+@import 'helper-utilities';
 @import '_grid';
 @import '_navigation-buttons';
+@import '_individual-modules';
+@import '_works';
 
 // Generic
 body::scrollbar {
@@ -31,6 +33,20 @@ body {
   color: #222;
 }
 
+h1, h2, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+a {
+  text-decoration: none;
+}
+
 %octicon {
   font: normal normal normal 16px/1 octicons; /* Dependency: $moduleHeaderHeight - change accordingly */
   text-decoration: none;
@@ -48,10 +64,10 @@ $moduleHeaderHeight: 22px;
   border-radius: 8px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
   overflow: hidden;
+}
 
-  div {
-    padding: 10px;
-  }
+.module > div {
+  padding: 10px;
 }
 
 [data-header]::before {
@@ -66,7 +82,6 @@ $moduleHeaderHeight: 22px;
   position: relative;
 }
 
-/// Individual Module
 // Header
 $headerHeight: 140px;
 
@@ -105,8 +120,7 @@ $headerHeight: 140px;
 }
 
 header img {
-  height: $headerHeight;
-  width: $headerHeight;
+  @include square-dimension($headerHeight);
   padding: 2px;
   border: 2px dotted white;
   border-radius: 70px;

@@ -1,0 +1,65 @@
+/*
+ * _individual-modules.scss
+ * Style specific to each module
+ */
+
+// Skills
+#skills ul {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+#skills > .col-4-10 > .module {
+  background-color: #FF986F;
+}
+
+#skills > .col-3-10 {
+  .module {
+    background-color: #FFC56F;
+  }
+
+  &:last-child > .module {
+    background-color: #FFE26F;
+  }
+}
+
+// More about me
+#more-about-me h1 {
+  margin-top: 16px;
+  font-size: 1.2em;
+}
+
+#more-about-me li {
+  font-size: 1.0em;
+  line-height: 1.6em;
+}
+
+.collapse {
+  /* Hack: transition on max-height */
+  transition-property: max-height;
+  transition-duration: 0.2s;
+  -webkit-transition-property: max-height;
+  -webkit-transition-duration: 0.2s;
+  max-height: 40px;
+}
+
+.collapse:hover {
+  max-height: 800px;
+  height: auto;
+}
+
+#more-about-me::before {
+  content: attr(data-header-icon) " " attr(data-header) "  \f03f";
+}
+
+#more-about-me:hover::before {
+  content: attr(data-header-icon) " " attr(data-header);
+}
+
+// Book list in More about me
+#book-list small::before {
+  content: "by ";
+  margin-left: 6px;
+}

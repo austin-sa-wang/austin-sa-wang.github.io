@@ -1,0 +1,64 @@
+/*
+ * _works.scss
+ * Style specific to works
+ */
+@import 'helper-utilities';
+
+#works ul {
+  list-style: none outside none;
+
+  li {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+$work-item-height: 130px;
+$work-item-padding: 3px;
+.work-item > a{
+  @extend %thin-border;
+  color: #222;
+  background-color: #E0E0E3;
+  border-radius: 6px;
+  height: $work-item-height;
+  padding: $work-item-padding;
+  display: block;
+  overflow: hidden;
+}
+
+.work-item img {
+  @extend %thin-border;
+  // Extra 1 pixel to account for image border width
+  @include square-dimension($work-item-height - ($work-item-padding + 1) * 2);
+  margin-right: 10px;
+  float: left;
+}
+
+.work-item div {
+  margin-top: 5px;
+}
+
+// List of technology used
+.work-item li {
+  @extend %thin-border;
+  font-size: 0.8em;
+  background-color: #FF986F;
+  border-radius: 4px;
+  padding: 2px;
+  display: inline;
+}
+
+/* Border Fade */
+.border-fade {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.border-fade:hover, .border-fade:focus, .border-fade:active {
+  box-shadow: inset 0 0 0 2px #777, 0 0 1px rgba(0, 0, 0, 0);
+}
