@@ -8,6 +8,7 @@
 // endbower
 
 @import '_grid';
+@import '_navigation-buttons';
 
 // Generic
 body::scrollbar {
@@ -55,7 +56,8 @@ $moduleHeaderHeight: 22px;
   position: relative;
 }
 
-// Header Spec
+/// Individual Module
+// Header
 $headerHeight: 140px;
 
 %caption {
@@ -102,3 +104,5 @@ header img {
   margin: 0 auto;
   display: block;
 }
+
+// Skills
