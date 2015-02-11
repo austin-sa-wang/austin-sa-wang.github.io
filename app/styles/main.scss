@@ -81,3 +81,28 @@ body::scrollbar {
   @include col-width(3, 4);
 }
 
+
+// Modules
+$moduleHeaderHeight: 22px;
+
+.module {
+  background-color: #EEE;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+
+  div {
+    padding: 10px;
+  }
+}
+
+[data-header]::before {
+  content: attr(data-header-icon) " " attr(data-header);
+  background-color: #232323;
+  color: #fff;
+  padding: 3px 6px 3px;
+  height: $moduleHeaderHeight; /* Dependency: #bkg-info {height} - change accordingly */
+  width: 100%;
+  display: block;
+  position: relative;
+}
