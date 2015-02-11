@@ -3,6 +3,8 @@
  * Helper rules accessible globally
  */
 
+$main-text-color: #222;
+
 @mixin square-dimension($size) {
   height: $size;
   width: $size;

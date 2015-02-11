@@ -20,7 +20,7 @@ $work-item-height: 130px;
 $work-item-padding: 3px;
 .work-item > a{
   @extend %thin-border;
-  color: #222;
+  color: $main-text-color;
   background-color: #E0E0E3;
   border-radius: 6px;
   height: $work-item-height;
