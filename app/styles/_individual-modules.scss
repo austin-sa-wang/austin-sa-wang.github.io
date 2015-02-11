@@ -26,16 +26,21 @@
 }
 
 // More about me
-#more-about-me h1 {
-  margin-top: 16px;
-  font-size: 1.2em;
-}
+#more-about-me {
+  h1 {
+    font-size: 1.2em;
 
-#more-about-me li {
-  font-size: 1.0em;
-  line-height: 1.6em;
-}
+    &:last-of-type {
+      margin-top: 10px;
+    }
+  }
 
+  ul {
+    margin-left: 30px;
+    font-size: 1.0em;
+    line-height: 1.6em;
+  }
+}
 .collapse {
   /* Hack: transition on max-height */
   transition-property: max-height;
